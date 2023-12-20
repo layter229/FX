@@ -1,0 +1,88 @@
+#button1 {
+    -fx-background-color: linen;
+    -fx-border-color: rgb(236, 228, 108);
+    -fx-border-width: 5;
+    -fx-border-radius: 6;
+}
+
+#button1:focused {
+    -fx-border-color: white;
+}
+
+#button1:hover {
+    -fx-border-color: rgb(192, 124, 79);
+}
+
+#button1:pressed {
+    -fx-border-color: black;
+}
+
+#textArea {
+    -fx-background-color: linen;
+    -fx-font-size: 14px;
+    -fx-border-width: 5;
+    -fx-border-color: rgb(236, 228, 108);
+}
+
+#textArea .content {
+    -fx-background-color: linen;
+}
+
+#textField {
+    -fx-background-color: linen;
+    -fx-border-color: rgb(236, 228, 108);
+    -fx-border-width: 5;
+}
+
+#toolPane {
+    -fx-background-color: linen;
+    -fx-border-color: rgb(236, 228, 108);
+    -fx-border-width: 5;
+}
+
+#circleButton {
+    -fx-fill: linen;
+    -fx-border-color: rgb(236, 228, 108);
+    -fx-border-width: 5;
+}
+
+#circleButton:hover {
+    -fx-fill:rgb(13, 158, 44);
+}
+
+#circleButton:pressed {
+    -fx-fill: rgb(236, 228, 108);
+}
+
+#checkbox1 {
+    -fx-background-color: linen;
+    -fx-border-color: rgb(236, 228, 108);
+    -fx-border-width: 5;
+    -fx-border-radius: 6;
+}
+
+#checkbox1:focused {
+    -fx-border-color: white;
+}
+
+#checkbox1:hover {
+    -fx-border-color: rgb(13, 158, 44);
+}
+
+#checkbox1:pressed {
+    -fx-border-color: black;
+}
+
+#listView {
+    -fx-background-color: linen;
+    -fx-border-color: rgb(236, 228, 108);
+    -fx-border-width: 5;
+}
+
+#listView .list-cell:odd {
+    -fx-background-color: aliceblue;
+}
+
+#listView .list-cell:even {
+    -fx-background-color: linen;
+}

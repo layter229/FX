@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.FXlab1Controller">
+   <top>
+      <HBox fx:id="toolPane" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#handleButtonOnPress" onMouseEntered="#handleMouseEnter" text="Button" translateX="30.0" translateY="25.0" />
+            <CheckBox fx:id="checkbox1" mnemonicParsing="false" onMouseEntered="#handleMouseEnter" text="CheckBox" translateX="40.0" translateY="30.0" />
+            <Circle fx:id="circleButton" fill="DODGERBLUE" onMouseClicked="#handleMouseClick" radius="30.0" stroke="BLACK" strokeType="INSIDE" translateX="50.0" translateY="15.0">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Circle>
+            <ButtonBar prefHeight="90.0" prefWidth="386.0">
+               <buttons>
+                  <RadioButton mnemonicParsing="false" onAction="#handleRadioButton" text="фиолетовый" />
+                  <RadioButton mnemonicParsing="false" onAction="#handleRadioButton" text="салатовый" />
+                  <RadioButton mnemonicParsing="false" onAction="#handleRadioButton" prefHeight="17.0" prefWidth="97.0" selected="true" text="жёлтый" />
+               </buttons>
+            </ButtonBar>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <ListView fx:id="listView" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></ListView>
+   </left>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <TextField fx:id="textField" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
